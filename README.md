@@ -55,13 +55,16 @@ The domain `auserve.com` was used to spoof the sender while preserving the visua
 
 The phishing landing pages closely mimic real Microsoft login flows. Once users clicked through, they were redirected to a fake Office 365 login portal hosted via Evilginx, complete with SSO prompts and login branding.
 
-### Simulated Login Page (Step 1)
+### Simulated Login Page (Enter Credentials)
 
 ![Landing Page 1](screenshots/simulated_landing_page.png)
 
 ### Simulated Login Page (Stay Signed In)
 
 ![Landing Page 2](screenshots/simulated_landing_page_2.png)
+
+### Simulated Login Page (Passthrough to Legitimate Session)
+![Landing Page 3](screenshots/passthrough.png)
 
 ---
 
