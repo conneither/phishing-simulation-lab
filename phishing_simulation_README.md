@@ -64,6 +64,7 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 ### Credential Interception (Demo)
 
 ![Intercepted Tokens](screenshots/Screenshot_2025-06-10_133409.png)
+![Intercepted Tokens Detailed](screenshots/Screenshot_2025-06-10_133506.png)
 
 ---
 
