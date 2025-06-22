@@ -4,7 +4,7 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 
 ---
 
-## 🔧 Tools Used
+## Tools Used
 
 - GoPhish (email simulation platform)
 - Evilginx2 (phishing proxy w/ credential interception)
@@ -15,7 +15,7 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 
 ---
 
-## 🎯 MITRE ATT&CK Mappings
+## MITRE ATT&CK Mappings
 
 | Technique             | ID         | Description                            |
 |-----------------------|------------|----------------------------------------|
@@ -25,7 +25,7 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 
 ---
 
-## 🚀 Campaign Overview
+## Campaign Overview
 
 1. Configured GoPhish with an SMTP sending profile (`smtp-mail.outlook.com:587`)
 2. Created realistic email templates based on Microsoft security alerts
@@ -35,7 +35,7 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 
 ---
 
-## 💡 Email Authenticity and Entra ID Spoofing
+## Email Authenticity and Entra ID Spoofing
 
 To improve realism and increase click-through rate, the sending address was customized via Entra ID to closely mirror a legitimate Microsoft address. In this case, the user name was set to `account-security-noreply@accountprotection.microsoft.com`, which matches Microsoft’s real domain for security alerts.
 
@@ -51,7 +51,7 @@ The domain `auserve.com` was used to spoof the sender while preserving the visua
 
 ---
 
-## 🕵️ Landing Page Realism
+## Landing Page Realism
 
 The phishing landing pages closely mimic real Microsoft login flows. Once users clicked through, they were redirected to a fake Office 365 login portal hosted via Evilginx, complete with SSO prompts and login branding.
 
@@ -65,7 +65,7 @@ The phishing landing pages closely mimic real Microsoft login flows. Once users 
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### GoPhish Dashboard
 
@@ -98,7 +98,7 @@ The phishing landing pages closely mimic real Microsoft login flows. Once users 
 
 ---
 
-## 🧠 Lessons Learned
+## Lessons Learned
 
 - Importance of simulating realistic email payloads
 - Credential capture via Evilginx bypasses MFA (token theft)
