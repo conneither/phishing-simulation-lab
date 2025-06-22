@@ -9,6 +9,7 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 - GoPhish (email simulation platform)
 - Evilginx2 (phishing proxy w/ credential interception)
 - AWS EC2 (Ubuntu host)
+- Microsoft Admin portal + Entra ID (email address spoofing)
 - Microsoft 365 phishing templates
 - ELK stack (external logging and detection, optional)
 
