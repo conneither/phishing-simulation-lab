@@ -62,9 +62,9 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 ![Evilginx Setup](screenshots/Screenshot_2025-06-10_131727.png)
 
 ### Credential Interception (Demo)
-
 ![Intercepted Tokens](screenshots/Screenshot_2025-06-10_133409.png)
 ![Intercepted Tokens Detailed](screenshots/Screenshot_2025-06-10_133506.png)
+
 
 ---
 
