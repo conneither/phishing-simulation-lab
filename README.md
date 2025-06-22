@@ -64,6 +64,7 @@ The phishing landing pages closely mimic real Microsoft login flows. Once users 
 ![Landing Page 2](screenshots/simulated_landing_page_2.png)
 
 ### Simulated Login Page (Passthrough to Legitimate Session)
+
 ![Landing Page 3](screenshots/passthrough.png)
 
 ---
