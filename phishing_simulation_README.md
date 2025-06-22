@@ -1,4 +1,3 @@
-
 # GoPhish + Evilginx Phishing Simulation Lab
 
 This project simulates a credential-harvesting phishing campaign using [GoPhish](https://getgophish.com) and [Evilginx](https://github.com/kgretzky/evilginx2), hosted on AWS EC2. It was created as a red team learning exercise and to demonstrate practical use of phishing infrastructure, detection logging, and MITRE ATT&CK technique mapping.
@@ -35,6 +34,36 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 
 ---
 
+## 💡 Email Authenticity and Entra ID Spoofing
+
+To improve realism and increase click-through rate, the sending address was customized via Entra ID to closely mirror a legitimate Microsoft address. In this case, the user name was set to `account-security-noreply@accountprotection.microsoft.com`, which matches Microsoft’s real domain for security alerts.
+
+The domain `auserve.com` was used to spoof the sender while preserving the visual credibility of the email. This technique effectively bypasses the initial skepticism many users apply when quickly glancing at the From: address.
+
+### Gmail Inbox Example
+
+![Gmail Inbox](screenshots/gmail_inbox_example.png)
+
+### Outlook Inbox Example
+
+![Outlook Inbox](screenshots/outlook_inbox_example.png)
+
+---
+
+## 🕵️ Landing Page Realism
+
+The phishing landing pages closely mimic real Microsoft login flows. Once users clicked through, they were redirected to a fake Office 365 login portal hosted via Evilginx, complete with SSO prompts and login branding.
+
+### Simulated Login Page (Step 1)
+
+![Landing Page 1](screenshots/simulated_landing_page.png)
+
+### Simulated Login Page (Stay Signed In)
+
+![Landing Page 2](screenshots/simulated_landing_page_2.png)
+
+---
+
 ## 📸 Screenshots
 
 ### GoPhish Dashboard
@@ -62,7 +91,8 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 ![Evilginx Setup](screenshots/Screenshot_2025-06-10_131727.png)
 
 ### Credential Interception (Demo)
-![Intercepted Tokens](screenshots/Screenshot_2025-06-10_133409.png)
+
+![Intercepted Tokens](screenshots/Screenshot_2025-06-10_133409.png)  
 ![Intercepted Tokens Detailed](screenshots/Screenshot_2025-06-10_133506.png)
 
 ---
@@ -73,6 +103,7 @@ This project simulates a credential-harvesting phishing campaign using [GoPhish]
 - Credential capture via Evilginx bypasses MFA (token theft)
 - Role of phishing in the early stages of an attack chain
 - How threat detection maps to MITRE techniques in a real environment
+- Impact of sender impersonation using domain lookalikes and Entra ID spoofing
 
 ---
 
